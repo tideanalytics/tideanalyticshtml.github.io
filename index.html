@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="assets/img/fav.png">
+	<title>TIDE Analytics - Understanding Traffic</title>
+	<link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/meanmenu.css">
+	<link rel="stylesheet" href="assets/css/slick/slick.css">
+	<link rel="stylesheet" href="assets/css/slick/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/default.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+	<!-- Custom -->
+	<style>
+
+		@media (min-width: 1024px) {
+			.container {
+				max-width: 900px;
+			}
+		}
+
+
+		.bilo_bg_1 {
+			background: url(internal-assets/img/index/mast_bg1.jpg) no-repeat;
+			background-size: cover;
+		}
+		.bilo_title h2 { font-weight: 400 }
+
+		.drop_shadow {
+			-webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.4);
+			-moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.4);
+			box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.4);
+		}
+
+		img.greyscale {
+			filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+			/* Firefox 3.5+ */
+			filter: gray;
+			/* IE6-9 */
+			-webkit-filter: grayscale(100%);
+			/* Chrome 19+ & Safari 6+ */
+		}
+
+		img.greyscale:hover {
+			filter: none;
+			-webkit-filter: grayscale(0%);
+		}
+
+		/* Features Section Adjustment */
+
+		@media only screen and (max-width: 576px) and (min-width: 0px) {
+			.ab_margin_4 {margin-top: 0px; }
+			.ab_margin_3 {margin-top: 0px; }
+			.ab_margin_5 {margin-top: 0px; }
+		}
+
+		@media (min-width: 576px) {
+			.ab_margin_4 {margin-top: 0px; }
+			.ab_margin_3 {margin-top: 0px; }
+			.ab_margin_5 {margin-top: 0px; }
+		}
+
+		@media (min-width: 768px) {
+			.ab_margin_4 {margin-top: 0px; }
+			.ab_margin_3 {margin-top: 0px; }
+			.ab_margin_5 {margin-top: 0px; }
+		}
+
+		@media (min-width: 992px) {
+			.ab_margin_4 {margin-top: 80px; }
+			.ab_margin_3 {margin-top: -200px; }
+			.ab_margin_5 {margin-top: -180px; }
+		}
+
+		@media (min-width: 1200px) {
+			.ab_margin_3 {margin-top: -200px; }
+			.ab_margin_5 {margin-top: -180px; }
+		}
+
+		/* Features Section Adjustments */
+
+		.plan_icon img {
+			width: 80px;
+			height: 80px;
+		}
+
+		.blog_info>ol {
+			margin-left: -20px;
+			margin-top: 10px;
+		}
+
+		.blog_info>ol>li {
+			max-width: 300px;
+			list-style: disc;
+		}
+
+		.widget-about p {
+			font-size: 16px;
+		}
+
+		.widget-title {
+			margin-bottom: 20px;
+		}
+
+		.widget-list ul li {
+			line-height: 24px;
+		}
+
+		.partners_single {
+			height: 50px;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<!-- Start Preloader -->
+	<div class="preloader">
+		<div class="lds-ellipsis">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<!-- End Preloader -->
+
+
+
+	<!-- Start Header area -->
+	<header id="header_sticky" class="header_area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-3">
+					<div class="bilo_logo text-left">
+						<a href="/">
+							<img style="max-height: 100px;" src="internal-assets/img/logo-vertical-grey.svg"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-6 pull-right">
+					<div class="nav_menu" style="float: right; padding-top: 0px;">
+						<nav class="main_menu">
+							<ul class="menu_list">
+								<li>
+									<a href="#home" class="page_scroll">INDUSTRIES<span class="caret"><i class="fas fa-angle-down"></i></span></a>
+									<ul class="sub-menu">
+										<li><a href="industry-shoppingmalls.html">Shopping Malls</a></li>
+										<li><a href="industry-events.html">Events</a></li>
+										<li><a href="industry-ooh.html">Out-Of-Home Media</a></li>
+										<li><a href="industry-salesgalleries.html">Sales Galleries</a></li>
+										<li><a href="industry-retail.html">Retail</a></li>
+										<li><a href="industry-smartcities.html">Smart Cities</a></li>
+									</ul>
+								</li>
+								<li><a href="https://app.tideanalytics.com/login" class="page_scroll">LOGIN</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="download_box text-center">
+						<a href="#" class="menu_btn drop_shadow" style="padding: 15px 40px; letter-spacing: 0.1em">GET QUOTE</a>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="mobile_menu"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header area -->
+
+
+
+	<!-- Start Header Bg section  -->
+	<section class="header_bg bilo_bg_1" id="home">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-8">
+					<div class="bg_area">
+						<div class="bilo_bg_text wow fadeInUp" data-wow-delay=".3s">
+							<h1 style="font-size: 82px; font-weight: 400; line-height: 70px;">Insert better title here to reach out</h1>
+							<p style="font-size: 23px">insert better sub text to do explanation</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Header Bg section  -->
+
+
+
+	<!-- Start Clients Section -->
+	<section class="bilo_partenrs" style="margin-top: 70px; margin-bottom: 50px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="partner_slide">
+						<div class="partners_single">
+							<img class="greyscale" style="max-height: 250px; max-width: 100px; padding-top: 23px;" src="internal-assets/img/logo-clients-sunway.png" alt="Sunway Group">
+						</div>
+						<div class="partners_single">
+							<img class="greyscale" style="max-height: 250px; max-width: 100px; padding-top: 20px;" src="internal-assets/img/logo-clients-avenuek.png" alt="Avenue K City Properties">
+						</div>
+						<div class="partners_single">
+							<img class="greyscale" style="max-height: 250px; max-width: 100px; padding-top: 9px;" src="internal-assets/img/logo-clients-mchb.png" alt="Matrix Concepts Holding Berhad">
+						</div>
+						<div class="partners_single">
+							<img class="greyscale" style="max-height: 250px; max-width: 100px; padding-top: 10px;" src="internal-assets/img/logo-clients-comicfiesta.png" alt="Comic Fiesta">
+						</div>
+						<div class="partners_single">
+							<img class="greyscale" style="max-height: 250px; max-width: 100px; padding-top: 45px;" src="internal-assets/img/logo-clients-publicis.png" alt="Publicis">
+						</div>
+						<div class="partners_single">
+							<img class="greyscale" style="max-height: 250px; max-width: 100px; padding-top: 43px;" src="internal-assets/img/logo-clients-impressor.png" alt="Impressor">
+						</div>
+						<div class="partners_single">
+							<img class="greyscale" style="max-height: 250px; max-width: 100px; padding-top: 10px;" src="internal-assets/img/logo-clients-aimsresearch.jpg" alt="AIMs Research">
+						</div>
+						<div class="partners_single">
+							<img class="greyscale" style="max-height: 250px; max-width: 100px; padding-top:5px; " src="internal-assets/img/logo-clients-msread.jpg" alt="Ms. Read">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Client Section -->
+
+
+
+	<!-- Start Features Section -->
+	<section class="bilo_about section_padding" style="margin-top: 0; padding-top: 0;">
+		<div class="container">
+			<div class="about_feature" style="margin-top: 0;" id="feature">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="feature_box_text wow fadeInUp" data-wow-delay=".1s">
+							<div class="title_img">
+								<img src="assets/img/soft/title.png" alt="">
+							</div>
+							<span>The Latest</span>
+							<h2>Footfall Analytics</h2>
+							<p style="margin-top: -36px;">TIDE provides the latest technology to help you make data-driven conclusions.</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ab_feature_box ab_margin_1 wow fadeInUp" data-wow-delay=".2s">
+							<div class="shpae shpae_1">
+								<img src="assets/img/soft/shape_1.png" alt="">
+							</div>
+							<div class="ab_feature_icon">
+								<img src="assets/img/soft/icon_2.png" class="img-fluid" alt="">
+							</div>
+							<div class="ab_feature_info">
+								<h3>Trend Analysis</h3>
+								<p>Compare key metrics between days, weeks, months to spot trends in your business health</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ab_feature_box ab_margin_2 wow fadeInUp" data-wow-delay=".1s">
+							<div class="shpae shpae_2">
+								<img src="assets/img/soft/shape_2.png" alt="">
+							</div>
+							<div class="ab_feature_icon">
+								<img src="assets/img/soft/icon_1.png" class="img-fluid" alt="">
+							</div>
+							<div class="ab_feature_info">
+								<h3>Zone Mapping</h3>
+								<p>Identify high performing zones and locations with multiple zone mappings.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ab_feature_box wow fadeInUp" data-wow-delay=".2s">
+							<div class="shpae shpae_3">
+								<img src="assets/img/soft/shape_3.png" alt="">
+							</div>
+							<div class="ab_feature_icon">
+								<img src="internal-assets/img/misc-icons/cloudcomputing.svg" class="img-fluid" alt="">
+							</div>
+							<div class="ab_feature_info">
+								<h3>Real Time Data Streaming</h3>
+								<p>Powered by the latest cloud technology and compression models data is analyzed instantly in the cloud to provide latest insight</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ab_feature_box ab_margin_3 wow fadeInUp" data-wow-delay=".1s">
+
+							<div class="ab_feature_icon">
+								<img src="internal-assets/img/misc-icons/scheduleddelivery.svg" class="img-fluid" alt="">
+							</div>
+							<div class="ab_feature_info">
+								<h3>Email Reporting</h3>
+								<p>Get everyone on the team up to date with PDF reports sent directly to them on a schedule</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ab_feature_box ab_margin_4 wow fadeInUp" data-wow-delay=".2s">
+							<div class="ab_feature_icon">
+								<img src="assets/img/soft/icon_4.png" class="img-fluid" alt="">
+							</div>
+							<div class="ab_feature_info">
+								<h3>Custom Reporting</h3>
+								<p>Gain deeper understanding of the data based on your specific needs</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="ab_feature_box ab_margin_5 wow fadeInUp" data-wow-delay=".1s">
+							<div class="ab_feature_icon">
+								<img src="internal-assets/img/misc-icons/computer.svg" class="img-fluid" alt="">
+							</div>
+							<div class="ab_feature_info">
+								<h3>API Integration</h3>
+								<p>REST API to connect our data with other parts of your system</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Features Section -->
+
+
+
+	<!-- Start Industries Section -->
+	<section class="bilo_news_feed section_padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="bilo_title text-center">
+						<h2 style="font-size: 28px; font-family: 'Gilroy-Bold.ttf'; color: #1b1c2f; font-weight: 400;">
+							TIDE helps businesses in various industries excel by leveraging data to drive customer satisfaction, long term strategic planning, and increased operational efficiency
+						</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 70px;">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog_sigle_area wow fadeInUp" data-wow-delay=".2s">
+						<div class="blog_img">
+							<img src="internal-assets/img/index/index-thumbnail-malls.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="blog_info">
+							<h3>Shopping Malls</h3>
+							<ol>
+								<li>Measure weekly campaigns and retention rate.</li>
+								<li>Identify distribution by floors and pinpoint bottlenecks.</li>
+								<li>Understand high traffic entrances and exits.</li>
+							</ol>
+							<a href="#" class="b_tag">learn more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog_sigle_area wow fadeInUp" data-wow-delay=".3s">
+						<div class="blog_img">
+							<img src="internal-assets/img/index/index-thumbnail-events.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="blog_info">
+							<h3>Events</h3>
+							<ol>
+								<li>Analyze hot zones and cold areas</li>
+								<li>Identify visitor flow path</li>
+								<li>Understand visitor engagement and interest level</li>
+							</ol>
+							<a href="#" class="b_tag">learn more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog_sigle_area wow fadeInUp" data-wow-delay=".4s">
+						<div class="blog_img">
+							<img src="internal-assets/img/index/index-thumbnail-ooh.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="blog_info">
+							<h3>Out-Of-Home Media</h3>
+							<ol>
+								<li>Quantify impression rate</li>
+								<li>Provide accountability to customers</li>
+								<li>Know how different messaging affects traffic conversion</li>
+							</ol>
+							<a href="#" class="b_tag">learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row" style="margin-bottom: 70px;">
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog_sigle_area wow fadeInUp" data-wow-delay=".2s">
+						<div class="blog_img">
+							<img src="internal-assets/img/index/index-thumbnail-sales-galleries.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="blog_info">
+							<h3>Sales Galleries</h3>
+							<ol>
+								<li>Obtain traffic insight without reporting from on ground salesperson</li>
+								<li>Measure visitor traffic vs sales person ratio</li>
+								<li>Compare visitor interest across different galleries</li>
+							</ol>
+							<a href="#" class="b_tag">learn more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog_sigle_area wow fadeInUp" data-wow-delay=".3s">
+						<div class="blog_img">
+							<img src="internal-assets/img/index/index-thumbnail-retail.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="blog_info">
+							<h3>Retail</h3>
+							<ol>
+								<li>Understand in store shopping behaviours</li>
+								<li>Identify passerby traffic and walk in ratio</li>
+								<li>Evaluate promotional efforts among multiple stores</li>
+							</ol>
+							<a href="#" class="b_tag">learn more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="blog_sigle_area wow fadeInUp" data-wow-delay=".4s">
+						<div class="blog_img">
+							<img src="internal-assets/img/index/index-thumbnail-smart-cities.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="blog_info">
+							<h3>Smart Cities</h3>
+							<ol>
+								<li>Identify traffic bottleneck and ease congestion</li>
+								<li>Understand seasonal trends at tourist spot</li>
+								<li>Optimise city resources to improve efficiency</li>
+							</ol>
+							<a href="#" class="b_tag">learn more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Start Industries Section -->
+
+
+
+	<!-- Start Get Quote Secion -->
+	<section class="bilo_app_trial section_padding" style="background-image: url('internal-assets/img/index/contact.png');"  id="download">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="bilo_title app_title text-center">
+						<h2>Let us help you make better decisions</h2>
+					</div>
+					<div class="bilo_bg_btn text-center">
+						<a href="#" class="bg_btn active-btn">Get Quote</a>
+						<a href="#" style=" font-size: 14px; color: #ff9d60; font-weight: 500; letter-spacing: 2px; text-decoration: underline; text-transform: uppercase; margin-left: 40px; margin-bottom: 15px;">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Get Quote Section -->
+
+
+
+	<!-- Start bilo-widget section -->
+	<section class="bilo_widget section_padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="widget_area">
+						<div class="widget-title">
+							<img style="margin-left: -30px; margin-bottom: 40px;" ; src="internal-assets/img/logo-vertical-grey-textless.svg"></img>
+						</div>
+						<div class="widget-about widget-address" style="margin-top: -50px;">
+							<p style="font-weight: bold;">TIDE Analytics Sdn. Bhd. (1103453-K)</p>
+							<br />
+							<p>Level 10, Oasis Wing, Brunsfield Oasis Tower 3,</p>
+							<p>No 2, Jalan PJU 1A/7A, Oasis Square, </p>
+							<p>47301 Petaling Jaya, Selangor, Malaysia.</p>
+							<br />
+							<p>Email: hello@tideanalytics.com</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="widget_area">
+						<div class="widget-title">
+							<h4>Industries<span>.</span></h4>
+						</div>
+						<div class="widget-list">
+							<div class="row">
+								<div class="col-lg-12">
+									<ul>
+										<li><a href="industry-shoppingmalls.html">Shopping Malls</a></li>
+										<li><a href="industry-events.html">Events</a></li>
+										<li><a href="industry-ooh.html">Out-Of-Home Media</a></li>
+										<li><a href="industry-salesgalleries.html">Sales Galleries</a></li>
+										<li><a href="industry-retail.html">Retail</a></li>
+										<li><a href="industry-smartcities.html">Smart Cities</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="widget_area">
+						<div class="widget-title">
+							<h4>Company<span>.</span></h4>
+						</div>
+						<div class="widget-list">
+							<div class="row">
+								<div class="col-lg-12">
+									<ul>
+										<li><a href="about.html">About</a></li>
+										<li><a href="careers.html">Careers</a></li>
+										<li><a href="contact.html">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End bilo-widget section -->
+
+	<!-- Start footer -->
+	<footer class="bilo_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="bilo_footer_text text-center">
+						<p>Copyright By TIDE Analytics Sdn Bhd</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- End footer -->
+
+
+
+	<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+	<script src="assets/css/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/css/bootstrap/js/popper.min.js"></script>
+	<script src="assets/css/slick/slick.min.js"></script>
+	<script src="assets/js/jquery.meanmenu.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+</body>
+
+</html>

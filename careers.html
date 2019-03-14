@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="assets/img/fav.png">
+	<title>TIDE Analytics - Understanding Traffic</title>
+	<link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+	<link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/meanmenu.css">
+	<link rel="stylesheet" href="assets/css/slick/slick.css">
+	<link rel="stylesheet" href="assets/css/slick/slick-theme.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/default.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+	<!-- Custom -->
+	<style>
+
+		@media (min-width: 1024px) {
+			.container {
+				max-width: 900px;
+			}
+		}
+
+		.header_area {
+			background: #4919ae;
+			padding: 20px 20px;
+			top:0px;
+		}
+
+		.bilo_logo img {
+			width: 80px;
+		}
+
+		.bilo_bg_1 {
+			background: url(internal-assets/img/about/wearetide-mast-10.png) no-repeat;
+			background-size: cover;
+		}
+
+		.bilo_bg_text, .bilo_bg_1 h1, .bilo_bg_1 p{
+			color: #170e2a;
+		}
+		.bilo_bg_1 p { font-size: 24px; }
+		.bilo_title h2 { font-weight: 400 }
+
+		.drop_shadow {
+			-webkit-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.4);
+			-moz-box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.4);
+			box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.4);
+		}
+
+		img.greyscale {
+			filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+			/* Firefox 3.5+ */
+			filter: gray;
+			/* IE6-9 */
+			-webkit-filter: grayscale(100%);
+			/* Chrome 19+ & Safari 6+ */
+		}
+
+		img.greyscale:hover {
+			filter: none;
+			-webkit-filter: grayscale(0%);
+		}
+
+		.plan_icon img {
+			width: 80px;
+			height: 80px;
+		}
+
+		.blog_info>ol {
+			margin-left: -20px;
+			margin-top: 10px;
+		}
+
+		.blog_info>ol>li {
+			max-width: 300px;
+			list-style: disc;
+		}
+
+		.widget-about p {
+			font-size: 16px;
+		}
+
+		.widget-title {
+			margin-bottom: 20px;
+		}
+
+		.widget-list ul li {
+			line-height: 24px;
+		}
+
+		.about_text_area h2 {
+			font-size: 36px;
+		}
+
+		.about_text_area p {
+			font-size: 18px;
+		}
+
+		.testimonial_text h2 {
+			font-size: 32px;
+			font-weight: normal;
+			text-align: center;
+		}
+
+		.work_btn {
+			text-decoration: none;
+		}
+
+		.work_info span {
+			font-family: "Gilroy-ExtraBold.ttf";
+			color: #170e2a;
+		}
+
+		.work_info p {
+			font-size: 18px;
+		}
+
+		.bilo_works {
+			margin-top: 0px;
+		}
+
+		.profile_area {
+			height: 586px;
+			padding: 80px 50px;
+			text-align: center;
+			outline: none;
+			margin: 40px 20px;
+			background: rgb(255, 255, 255);
+			box-shadow: 0px 16px 32px 0px rgba(207, 205, 255, 0.5);
+			border: none;
+		}
+
+		.form-control {
+			border-radius: 0;
+			font-family: 'Nunito', sans-serif;
+
+			font-size: 16px;
+
+			color: #6870a0;
+
+		}
+
+		.btn-submit {
+			border: 2px solid #ff9d60;
+			background-color: #ff9d60 !important;
+			color: #fff;
+			font-weight: 400;
+			font-size: 16px;
+			padding: 10px 50px 35px;
+			width: auto;
+		}
+
+		.btn-submit:hover, .btn-submit:focus, .btn-submit:active {
+			border: 2px solid #6870a0;
+			background-color: transparent !important;
+			color: #6870a0;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 3px rgba(207, 205, 255, 0.5);
+			outline: 0 none;
+		}
+
+		.form-control:focus {
+			border-color:  rgba(207, 205, 255, 0.75);
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(207, 205, 255, 0.5);
+			outline: 0 none;
+		}
+
+		.color-dark {
+			color: #170e2a !important;
+		}
+
+		.job-posting {
+			margin-top: 40px;
+			background: rgb(255, 255, 255);
+			box-shadow: 0px 16px 32px 0px rgba(207, 205, 255, 0.5);
+			border: none;
+		}
+	</style>
+</head>
+
+<body>
+
+
+
+	<!-- Start Header area -->
+	<header id="header_sticky" class="header_area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-3">
+					<div class="bilo_logo text-left">
+						<a href="/">
+							<img style="max-height: 100px;" src="internal-assets/img/logo-vertical-grey.svg"/>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-6 pull-right">
+					<div class="nav_menu" style="float: right; padding-top: 0px;">
+						<nav class="main_menu">
+							<ul class="menu_list">
+								<li>
+									<a href="#home" class="page_scroll">INDUSTRIES<span class="caret"><i class="fas fa-angle-down"></i></span></a>
+									<ul class="sub-menu">
+										<li><a href="industry-shoppingmalls.html">Shopping Malls</a></li>
+										<li><a href="industry-events.html">Events</a></li>
+										<li><a href="industry-ooh.html">Out-Of-Home Media</a></li>
+										<li><a href="industry-salesgalleries.html">Sales Galleries</a></li>
+										<li><a href="industry-retail.html">Retail</a></li>
+										<li><a href="industry-smartcities.html">Smart Cities</a></li>
+									</ul>
+								</li>
+								<li><a href="https://app.tideanalytics.com/login" class="page_scroll">LOGIN</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="download_box text-center">
+						<a href="#" class="menu_btn drop_shadow" style="padding: 15px 40px; letter-spacing: 0.1em">GET QUOTE</a>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="mobile_menu"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- End Header area -->
+
+
+
+	<!-- Start form section -->
+	<section class="section_padding" style="padding-top:205px; padding-bottom: 205px; min-height:275px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+
+					<div class="feature_box_text wow fadeInUp" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+						<div class="title_img">
+							<img src="assets/img/soft/title.png" alt="">
+						</div>
+						<h2>Careers</h2>
+						<p style="padding-left: 10px; font-size: 19px;">Join us on a mission in helping businesses make insight-driven decisions. if you're interested in the position, send us an email to hello@tideanalytics.com with the title of the postion.</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="row" style="padding-top: 30px;">
+
+				<div class="col-xs-12 col-sm-12 col-md-10 offset-md-1">
+					<div class="feature_area job-posting wow fadeInUp" data-wow-delay=".01s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+						<div class="feature_icon">
+							<i class="fas fa-glasses" style="margin-top: 30px;"></i>
+						</div>
+						<div class="feature_info" style="text-align: left;">
+							<h4 class="text-center">Internship For Data Analyst</h4>
+							<h5 style="padding-bottom: 10px;">Responsibilities</h5>
+							<ul>
+								<li>Write scripts to process and perform data cleansing from raw data.</li>
+								<li>Conduct deep dive analysis into trends to identify patterns and irregularities.</li>
+								<li>Organize data in a way that any analysis can be reproduced easily.</li>
+								<li>Provide detailed and summary analysis on the findings.</li>
+								<li>Generate reports and charts in a presentable way.</li>
+
+							</ul>
+							<br/>
+							<h5 style="padding-bottom: 10px;">Requirements</h5>
+							<ul>
+								<li>Strong analytical skill</li>
+								<li>Knowledge in data data extraction and manipulation</li>
+								<li>Basic coding experience in either Node.js/Go/Python</li>
+								<li>Experience in using excel</li>
+								<li>Self-motivated and constantly looking for self improvement</li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-12 col-md-10 offset-md-1">
+					<div class="feature_area job-posting wow fadeInUp" data-wow-delay=".01s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+						<div class="feature_icon">
+							<i class="fas fa-people-carry" style="margin-top: 30px;"></i>
+						</div>
+						<div class="feature_info" style="text-align: left;">
+							<h4 class="text-center">Internship for Sales & Marketing</h4>
+							<h5 style="padding-bottom: 10px;">Responsibilities</h5>
+							<ul>
+								<li>Develop sales strategies to reach new customers.</li>
+								<li>Support sales and lead generation efforts.</li>
+								<li>Perform industry and market research.</li>
+								<li>Review, update and improve marketing materials.</li>
+								<li>Handling of social media, public relations and content marketing.</li>
+							</ul>
+							<br/>
+							<h5 style="padding-bottom: 10px;">Requirements</h5>
+							<ul>
+								<li>Experience in Google Slides</li>
+								<li>Proficient in English</li>
+								<li>Excellent written and verbal communication skill</li>
+								<li>Positive and outgoing attitude</li>
+								<li>Self-motivated and constantly looking for self improvement</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End form section -->
+
+
+
+	<!-- Start bilo-widget section -->
+	<section class="bilo_widget section_padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="widget_area">
+						<div class="widget-title">
+							<img style="margin-left: -30px; margin-bottom: 40px;" ; src="internal-assets/img/logo-vertical-grey-textless.svg"></img>
+						</div>
+						<div class="widget-about widget-address" style="margin-top: -50px;">
+							<p style="font-weight: bold;">TIDE Analytics Sdn. Bhd. (1103453-K)</p>
+							<br />
+							<p>Level 10, Oasis Wing, Brunsfield Oasis Tower 3,</p>
+							<p>No 2, Jalan PJU 1A/7A, Oasis Square, </p>
+							<p>47301 Petaling Jaya, Selangor, Malaysia.</p>
+							<br />
+							<p>Email: hello@tideanalytics.com</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="widget_area">
+						<div class="widget-title">
+							<h4>Industries<span>.</span></h4>
+						</div>
+						<div class="widget-list">
+							<div class="row">
+								<div class="col-lg-12">
+									<ul>
+										<li><a href="industry-shoppingmalls.html">Shopping Malls</a></li>
+										<li><a href="industry-events.html">Events</a></li>
+										<li><a href="industry-ooh.html">Out-Of-Home Media</a></li>
+										<li><a href="industry-salesgalleries.html">Sales Galleries</a></li>
+										<li><a href="industry-retail.html">Retail</a></li>
+										<li><a href="industry-smartcities.html">Smart Cities</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="widget_area">
+						<div class="widget-title">
+							<h4>Company<span>.</span></h4>
+						</div>
+						<div class="widget-list">
+							<div class="row">
+								<div class="col-lg-12">
+									<ul>
+										<li><a href="about.html">About</a></li>
+										<li><a href="careers.html">Careers</a></li>
+										<li><a href="contact.html">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End bilo-widget section -->
+
+	<!-- Start footer -->
+	<footer class="bilo_footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="bilo_footer_text text-center">
+						<p>Copyright By TIDE Analytics Sdn Bhd</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- End footer -->
+
+
+
+	<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+	<script src="assets/css/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/css/bootstrap/js/popper.min.js"></script>
+	<script src="assets/css/slick/slick.min.js"></script>
+	<script src="assets/js/jquery.meanmenu.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+
+</body>
+
+</html>

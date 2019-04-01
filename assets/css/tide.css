@@ -1,9 +1,33 @@
 
+/* reduce confetti image */
 .title_img {
-  visibility: hidden;
+  display: none;
 }
 
+/* increase height so font thickness wont cut off */
 .feature_box_text span {
   line-height: 46px;
 }
 
+/* reduce header height */
+.header_area.sticky {
+  padding: 8px 20px;
+}
+
+/* reduce header logo image height */
+.header_area.sticky .bilo_logo img {
+  width: 68px;
+}
+
+/* get quote button */
+.download_box .menu_btn {
+  padding: 15px 40px;
+  letter-spacing: 0.1em;
+}
+
+/* reduce header get quote button */
+.header_area.sticky .download_box .menu_btn {
+  padding: 15px 40px;
+  letter-spacing: 0.1em;
+  padding: 8px 25px;
+}

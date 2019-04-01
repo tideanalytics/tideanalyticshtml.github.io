@@ -1534,7 +1534,6 @@ input::placeholder{
 	position: absolute;
 	top: 0;
 	left: 0;
-	visibility: hidden;
 }
 .bilo_title_2 span{
 	display: block;
@@ -1666,7 +1665,7 @@ input::placeholder{
 	font-family: 'Gilroy-Light.ttf';
 	font-size: 50px;
 	color: #1b1c2f;
-	line-height: 46px;
+	line-height: 40px;
 	margin-bottom: 3px;
 }
 .feature_box_text h2{

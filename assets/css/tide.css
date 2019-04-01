@@ -31,3 +31,18 @@
   letter-spacing: 0.1em;
   padding: 8px 40px;
 }
+
+/* remove underline as it seems like link */
+.bilo_title_span span {
+  text-decoration: none;
+}
+
+/* footer padding */
+.bilo_footer {
+  padding: 16px 0px;
+}
+
+/* footer font */
+.bilo_footer_text {
+  font-size: 0.8em;
+}

@@ -42,3 +42,13 @@
   font-size: 0.8em;
   padding: 24px 0px;
 }
+
+/* footer company name color */
+.bilo_widget .widget-title p {
+	color: #c0b9cf;
+}
+
+/* footer reduce padding */
+.bilo_widget.section_padding {
+	padding: 60px 0;
+}

@@ -14,9 +14,16 @@
   padding: 8px 20px;
 }
 
-/* reduce header logo image height */
+/* reduce header logo height */
+.header_area .bilo_logo img {
+  width: inherit;
+  max-height: 55px;
+}
+
+/* reduce header logo height */
 .header_area.sticky .bilo_logo img {
-  width: 68px;
+  width: inherit;
+  max-height: 40px;
 }
 
 /* get quote button */

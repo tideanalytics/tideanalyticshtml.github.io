@@ -1,4 +1,6 @@
 
+// overwrite template script
+
 /*---------------------------------
 sticky header JS
 -----------------------------------*/
@@ -13,6 +15,8 @@ $(window).on('scroll',function() {
     $('#header_sticky').addClass('sticky');
   }
 });
+
+// get latest year
 
 (function() {
   'use strict';

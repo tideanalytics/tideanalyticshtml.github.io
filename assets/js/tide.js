@@ -36,8 +36,8 @@ $(window).on('scroll', function () {
   'use strict';
   function initFreshChat() {
     window.fcWidget.init({
-      token: "782ca078-53a3-430c-86e9-f06c6a1f1aa0",
-      host: "https://wchat.freshchat.com"
+      token: '782ca078-53a3-430c-86e9-f06c6a1f1aa0',
+      host: 'https://wchat.freshchat.com'
     });
   }
 

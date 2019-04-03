@@ -1,9 +1,4 @@
 
-/* reduce confetti image */
-.title_img {
-  display: none;
-}
-
 /* increase height so font thickness wont cut off */
 .feature_box_text span {
   line-height: 46px;
@@ -58,4 +53,16 @@
 /* footer reduce padding */
 .bilo_widget.section_padding {
 	padding: 60px 0;
+}
+
+/* overwrite hover style */
+.ab_feature_box:hover{
+	background-color: rgb(255, 255, 255);
+  box-shadow: 0px 16px 32px 0px rgba(207, 205, 255, 0.5);
+}
+.ab_feature_box:hover .ab_feature_info h3{
+  color: #30314b;
+}
+.ab_feature_box:hover .ab_feature_info p{
+  color: #30314b;
 }

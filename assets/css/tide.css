@@ -25,6 +25,7 @@
 .download_box .menu_btn {
   padding: 15px 40px;
   letter-spacing: 0.1em;
+  background-color:rgb(255,157,96,0.95);
 }
 
 /* reduce header get quote button */
